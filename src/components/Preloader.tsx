@@ -48,7 +48,7 @@ export const Preloader = ({ onComplete }: { onComplete: () => void }) => {
             {/* Loading Text with Glitch Effect */}
             <div className="relative">
                 <div className="text-neon-cyan font-mono text-sm md:text-base tracking-[0.2em] animate-pulse">
-                    INITIALIZING ANTI-GRAVITY PROTOCOLS...
+                    INITIALIZING IV-GRAVITY PROTOCOLS...
                 </div>
                 {/* Scanning Line */}
                 <div className="absolute bottom-0 left-0 h-[2px] bg-neon-purple w-full animate-[width_2s_ease-in-out_infinite]" />

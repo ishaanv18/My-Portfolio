@@ -16,9 +16,12 @@ export const TechStack = () => {
 
     const innerOrbit: TechItem[] = [
         { name: "Java", color: "#f89820", slug: "openjdk" },
+        { name: "JavaScript", color: "#F7DF1E", slug: "javascript" },
         { name: "Spring Boot", color: "#6db33f", slug: "springboot" },
         { name: "React", color: "#61dafb", slug: "react" },
         { name: "Python", color: "#3776ab", slug: "python" },
+        { name: "TypeScript", color: "#3178c6", slug: "typescript" },
+        { name: "Node.js", color: "#339933", slug: "nodedotjs" },
     ];
 
     const outerOrbit: TechItem[] = [
@@ -30,26 +33,27 @@ export const TechStack = () => {
             image: awsLogo
         },
         { name: "Kubernetes", color: "#326ce5", slug: "kubernetes" },
-        { name: "SQL", color: "#00758f", slug: "postgresql" },
-        { name: "Mongo", color: "#47a248", slug: "mongodb" },
+        { name: "MongoDB", color: "#47a248", slug: "mongodb" },
+        { name: "MySQL", color: "#4479A1", slug: "mysql" },
         { name: "Git", color: "#f05032", slug: "git" },
+        { name: "Express", color: "#ffffff", slug: "express" },
+        { name: "Tailwind", color: "#06b6d4", slug: "tailwindcss" },
     ];
 
     const allTech = [
         ...innerOrbit,
         ...outerOrbit,
         { name: "C++", color: "#00599C", slug: "cplusplus" },
-        { name: "JavaScript", color: "#F7DF1E", slug: "javascript" },
-        { name: "TypeScript", color: "#3178c6", slug: "typescript" },
-        { name: "Node.js", color: "#339933", slug: "nodedotjs" },
-        { name: "Express.js", color: "#ffffff", slug: "express" },
         { name: "HTML5", color: "#E34F26", slug: "html5" },
-        { name: "MySQL", color: "#4479A1", slug: "mysql" },
-        { name: "Tailwind", color: "#06b6d4", slug: "tailwindcss" },
+        { name: "CSS3", color: "#1572B6", slug: "css3" },
         { name: "Three.js", color: "#ffffff", slug: "threedotjs" },
         { name: "GitHub Actions", color: "#2088FF", slug: "githubactions" },
         { name: "Postman", color: "#ff6c37", slug: "postman" },
         { name: "Figma", color: "#f24e1e", slug: "figma" },
+        { name: "Redis", color: "#DC382D", slug: "redis" },
+        { name: "Jenkins", color: "#D24939", slug: "jenkins" },
+        { name: "Vite", color: "#646CFF", slug: "vite" },
+        { name: "REST API", color: "#009688", slug: "fastapi" },
     ];
 
     return (
