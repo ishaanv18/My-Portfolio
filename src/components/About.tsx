@@ -76,7 +76,7 @@ export const About = () => {
                         <div className="relative group">
                             <div className="absolute -inset-1 bg-gradient-to-r from-neon-cyan to-neon-purple rounded-full blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
                             <div className="relative w-64 h-64 rounded-full overflow-hidden border-2 border-white/20">
-                                <img src="/src/assets/ishaan_profile.jpg" alt="Ishaan Verma" className="w-full h-full object-cover" />
+                                <img src="/ishaan_profile.jpg" alt="Ishaan Verma" className="w-full h-full object-cover" />
                             </div>
                         </div>
 

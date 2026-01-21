@@ -40,7 +40,7 @@ export const Education = () => {
 
                         <div className="md:w-1/2 md:pr-12 md:text-right ml-10 md:ml-0 flex flex-col items-end">
                             <div className="w-32 h-32 mb-4 rounded-full overflow-hidden border-2 border-neon-cyan/50 shadow-[0_0_15px_rgba(0,243,255,0.3)] bg-white p-1">
-                                <img src="/src/assets/vit_logo.jpg" alt="VIT Logo" className="w-full h-full object-contain" />
+                                <img src="/vit_logo.jpg" alt="VIT Logo" className="w-full h-full object-contain" />
                             </div>
                             <h3 className="text-2xl font-bold text-white mb-2">B.Tech in Computer Science Engineering</h3>
                             <p className="text-neon-purple font-medium mb-4">Vellore Institute of Technology</p>

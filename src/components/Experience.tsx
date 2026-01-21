@@ -15,7 +15,7 @@ export const Experience = () => {
             role: "Software Developer Intern",
             period: "Oct 2024 – Dec 2024",
             location: "Noida, Uttar Pradesh, India",
-            logo: "/src/assets/arrise_logo.png",
+            logo: "/arrise_logo.png",
             intro: "During my internship at Arrise Solutions, I worked on building and optimizing production-grade full-stack applications for enterprise use. I contributed to both backend and frontend development, focusing on performance, security, and user experience.",
             details: [
                 "On the backend, I developed and enhanced features using Spring Boot, implemented secure authentication with role-based access control, and optimized APIs for better reliability and scalability. I also performed debugging, unit testing, and code optimization to ensure high-quality delivery.",
