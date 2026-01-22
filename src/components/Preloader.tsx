@@ -5,7 +5,7 @@ export const Preloader = ({ onComplete }: { onComplete: () => void }) => {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
-        // Progress animation - completes in ~1.5 seconds
+        // Progress animation - completes in ~1.7 seconds
         const interval = setInterval(() => {
             setProgress((prev) => {
                 if (prev >= 100) {
@@ -13,10 +13,10 @@ export const Preloader = ({ onComplete }: { onComplete: () => void }) => {
                     setTimeout(onComplete, 200);
                     return 100;
                 }
-                const increment = Math.floor(Math.random() * 12) + 8; // Faster jumps
+                const increment = Math.floor(Math.random() * 10) + 7; // Medium-fast jumps
                 return Math.min(prev + increment, 100);
             });
-        }, 100); // Faster interval for 1.5 seconds total
+        }, 120); // Interval for 1.7 seconds total
 
         return () => clearInterval(interval);
     }, [onComplete]);
