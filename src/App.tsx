@@ -16,9 +16,8 @@ import { Preloader } from './components/Preloader';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
-  // Auto-hide preloader after minimal time (just for visual effect)
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 1000); // Reduced to 1 second
+    const timer = setTimeout(() => setIsLoading(false), 1500); // 1.5 seconds
     return () => clearTimeout(timer);
   }, []);
 

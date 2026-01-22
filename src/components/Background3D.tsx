@@ -41,7 +41,7 @@ const Stars = (props: any) => {
     );
 };
 
-const Background3D = () => {
+export const Background3D = () => {
     return (
         <div className="absolute inset-0 z-0">
             <Canvas camera={{ position: [0, 0, 1] }}>
@@ -50,5 +50,3 @@ const Background3D = () => {
         </div>
     );
 };
-
-export default Background3D;

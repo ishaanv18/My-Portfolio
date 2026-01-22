@@ -1,17 +1,12 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
-import { lazy, Suspense } from 'react';
-
-// Lazy load the heavy 3D background
-const Background3D = lazy(() => import('./Background3D'));
+import { Background3D } from './Background3D';
 import resume from '../assets/Ishaan_Verma_Resume.pdf';
 
 export const Hero = () => {
     return (
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
-            <Suspense fallback={null}>
-                <Background3D />
-            </Suspense>
+            <Background3D />
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
                 <motion.div
