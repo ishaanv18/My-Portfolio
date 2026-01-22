@@ -5,18 +5,18 @@ export const Preloader = ({ onComplete }: { onComplete: () => void }) => {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
+        // Fast progress animation - completes in ~800ms
         const interval = setInterval(() => {
             setProgress((prev) => {
                 if (prev >= 100) {
                     clearInterval(interval);
-                    setTimeout(onComplete, 300); // Reduced wait time
+                    setTimeout(onComplete, 200);
                     return 100;
                 }
-                // Faster increment for quicker load
-                const increment = Math.floor(Math.random() * 8) + 3;
+                const increment = Math.floor(Math.random() * 15) + 10; // Big jumps for speed
                 return Math.min(prev + increment, 100);
             });
-        }, 40); // Reduced from 80ms to 40ms for ~2 second total
+        }, 80); // Fast interval
 
         return () => clearInterval(interval);
     }, [onComplete]);
@@ -56,7 +56,7 @@ export const Preloader = ({ onComplete }: { onComplete: () => void }) => {
 
             {/* System Status Lines */}
             <div className="mt-8 space-y-1 text-xs text-gray-500 font-mono text-center opacity-70">
-                <p>{progress < 30 ? "Booting Neural Systems..." : progress < 60 ? "Calibrating Gravity Engines..." : "Establishing Secure Uplink..."}</p>
+                <p>{progress < 30 ? "Booting Systems..." : progress < 70 ? "Loading Assets..." : "Almost Ready..."}</p>
                 <p className="text-[10px] tracking-widest">SYS.VER.2025.1.0</p>
             </div>
         </motion.div>

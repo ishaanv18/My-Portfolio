@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Layout } from './components/Layout';
 import { Hero } from './components/Hero';
@@ -15,6 +15,12 @@ import { Preloader } from './components/Preloader';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+
+  // Auto-hide preloader after minimal time (just for visual effect)
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 1000); // Reduced to 1 second
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
