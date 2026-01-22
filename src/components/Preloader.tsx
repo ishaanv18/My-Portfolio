@@ -9,14 +9,14 @@ export const Preloader = ({ onComplete }: { onComplete: () => void }) => {
             setProgress((prev) => {
                 if (prev >= 100) {
                     clearInterval(interval);
-                    setTimeout(onComplete, 500); // Wait a bit after 100%
+                    setTimeout(onComplete, 300); // Reduced wait time
                     return 100;
                 }
-                // Randomize increment for "hacking" feel
-                const increment = Math.floor(Math.random() * 5) + 1;
+                // Faster increment for quicker load
+                const increment = Math.floor(Math.random() * 8) + 3;
                 return Math.min(prev + increment, 100);
             });
-        }, 80); // Roughly 3-4 seconds total
+        }, 40); // Reduced from 80ms to 40ms for ~2 second total
 
         return () => clearInterval(interval);
     }, [onComplete]);

@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { Github, Code2, ExternalLink } from 'lucide-react';
-import empowerlyLogo from '../assets/empowerly_logo.png';
-import arribotLogo from '../assets/arribot_logo.png';
-import aiDungeonLogo from '../assets/ai_dungeon_logo.png';
+import empowerlyLogo from '../assets/empowerly_logo.webp';
+import arribotLogo from '../assets/arribot_logo.webp';
+import aiDungeonLogo from '../assets/ai_dungeon_logo.webp';
 
 export const Projects = () => {
     const projects = [
