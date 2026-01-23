@@ -12,7 +12,7 @@ export const Contributions = () => {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4"><span className="text-neon-cyan">07.</span> The Legacy</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4"><span className="text-neon-cyan">06.</span> The Legacy</h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-neon-purple to-neon-cyan mx-auto rounded-full mb-8" />
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                         My open source contributions and coding activity on GitHub.
