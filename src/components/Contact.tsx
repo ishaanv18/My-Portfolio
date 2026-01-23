@@ -107,7 +107,7 @@ export const Contact = () => {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4"><span className="text-neon-cyan">07.</span> Signal</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4"><span className="text-neon-cyan">08.</span> Signal</h2>
                     <p className="text-gray-400">Establish Connection</p>
                 </motion.div>
 
