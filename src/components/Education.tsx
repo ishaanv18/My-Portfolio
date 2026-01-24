@@ -58,7 +58,7 @@ export const Education = () => {
                                 </div>
                                 <div className="space-y-4 text-gray-400 text-sm leading-relaxed">
                                     <p>
-                                        I am currently pursuing my B.Tech in Computer Science Engineering at VIT Bhopal, where I have built a strong foundation in core computer science subjects such as Data Structures & Algorithms, Operating Systems, Computer Networks, DBMS, and Object-Oriented Programming.
+                                        I am currently pursuing my B.Tech in Computer Science Engineering at VIT Bhopal, where I have built a good knowledge in core computer science subjects such as Data Structures & Algorithms, Operating Systems, Computer Networks, DBMS, and Object-Oriented Programming.
                                     </p>
                                     <p>
                                         Alongside academics, I actively focus on practical, real-world development by working on full-stack and AI-driven projects using Spring Boot, React, MongoDB, AWS, Docker, and modern DevOps practices.
