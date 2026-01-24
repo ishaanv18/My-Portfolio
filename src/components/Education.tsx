@@ -54,7 +54,7 @@ export const Education = () => {
                             <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-neon-cyan/30 transition-colors">
                                 <div className="flex items-center gap-3 mb-4 text-neon-cyan">
                                     <GraduationCap />
-                                    <span className="font-bold">CGPA: 8.2/10</span>
+                                    <span className="font-bold">CGPA: 7.80/10</span>
                                 </div>
                                 <div className="space-y-4 text-gray-400 text-sm leading-relaxed">
                                     <p>

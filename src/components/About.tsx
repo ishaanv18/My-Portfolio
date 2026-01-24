@@ -87,7 +87,7 @@ export const About = () => {
                                     I’m Ishaan Verma, a final-year <span className="text-white font-bold">B.Tech Computer Science Engineering</span> student at VIT Bhopal with a strong passion for building scalable, real-world software products. I specialize in <span className="text-neon-cyan font-medium">Full Stack Development</span> and enjoy working at the intersection of backend systems, modern frontend interfaces, AI-powered applications, and product design.
                                 </p>
                                 <p>
-                                    Along with a solid technical foundation in DSA, Operating Systems, DBMS, and Computer Networks, I also have a growing interest in product development and business fundamentals. I focus on understanding user needs, system usability, performance, and real-world impact while building solutions.
+                                    Along with a good technical knowledge in DSA, Operating Systems, DBMS, and Computer Networks, I also have a growing interest in product development and business fundamentals. I focus on understanding user needs, system usability, performance, and real-world impact while building solutions.
                                 </p>
                                 <p>
                                     I have hands-on experience with Spring Boot, React, MongoDB, AWS, Docker, and Kubernetes, and I aim to create secure, efficient, and scalable systems that can evolve into real products. My project work includes <span className="text-neon-purple font-medium">HR platforms, AI learning tools, and code intelligence systems</span> designed with both technical excellence and business value in mind.
