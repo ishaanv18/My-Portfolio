@@ -49,9 +49,6 @@ export const TechStack = () => {
         { name: "Three.js", color: "#ffffff", slug: "threedotjs" },
         { name: "GitHub Actions", color: "#2088FF", slug: "githubactions" },
         { name: "Postman", color: "#ff6c37", slug: "postman" },
-        { name: "Figma", color: "#f24e1e", slug: "figma" },
-        { name: "Redis", color: "#DC382D", slug: "redis" },
-        { name: "Jenkins", color: "#D24939", slug: "jenkins" },
         { name: "Vite", color: "#646CFF", slug: "vite" },
         { name: "REST API", color: "#009688", slug: "fastapi" },
     ];

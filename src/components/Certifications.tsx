@@ -6,13 +6,13 @@ export const Certifications = () => {
         {
             name: "Oracle OCI DevOps Professional",
             issuer: "Oracle",
-            date: "2024",
+            date: "2025",
             gradient: "from-red-500/20 to-orange-500/20"
         },
         {
             name: "Oracle OCI Generative AI",
             issuer: "Oracle",
-            date: "2024",
+            date: "2025",
             gradient: "from-blue-500/20 to-purple-500/20"
         },
         {
@@ -24,7 +24,7 @@ export const Certifications = () => {
         {
             name: "Tech Fest 2025 Gold Medal",
             issuer: "Ramanujan Club",
-            date: "2025",
+            date: "2024",
             icon: "🏆",
             gradient: "from-yellow-500/20 to-amber-500/20"
         }
