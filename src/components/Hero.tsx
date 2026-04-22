@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 import { Background3D } from './Background3D';
 import resume from '../assets/Ishaan_Verma_Resume.pdf';
+import pmResume from '../assets/Ishaan_Verma_Product_Management_Resume.pdf';
 
 export const Hero = () => {
     return (
@@ -32,20 +33,20 @@ export const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-xl md:text-2xl text-gray-400 mb-10 max-w-2xl mx-auto font-light"
+                    className="text-xl md:text-2xl text-gray-400 mb-10 max-w-3xl mx-auto font-light"
                 >
-                    Software Developer | Architecting the <span className="text-neon-purple font-medium">Digital Future</span>
+                    Software Engineering & Product Management | Architecting the <span className="text-neon-purple font-medium">Digital Future</span>
                 </motion.p>
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
-                    className="flex flex-col md:flex-row items-center justify-center gap-4"
+                    className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-4"
                 >
                     <a
                         href="#projects"
-                        className="group relative px-8 py-4 bg-white text-obsidian rounded-full font-bold text-lg hover:bg-neon-cyan transition-colors duration-300 flex items-center gap-2 overflow-hidden"
+                        className="group relative px-6 py-4 bg-white text-obsidian rounded-full font-bold md:text-lg hover:bg-neon-cyan transition-colors duration-300 flex items-center gap-2 overflow-hidden whitespace-nowrap"
                     >
                         Explore Universe
                         <ArrowRight className="group-hover:translate-x-1 transition-transform" />
@@ -54,12 +55,22 @@ export const Hero = () => {
 
                     <a
                         href={resume}
-                        download="Ishaan_Verma_Resume.pdf"
+                        download="Ishaan_Verma_Software_Engineering_Resume.pdf"
                         target="_blank"
-                        className="px-8 py-4 rounded-full border border-white/20 text-white font-medium hover:bg-white/5 hover:border-white/40 transition-all flex items-center gap-2 backdrop-blur-sm"
+                        className="px-6 py-4 rounded-full border border-white/20 text-white font-medium hover:bg-white/5 hover:border-white/40 transition-all flex items-center gap-2 backdrop-blur-sm whitespace-nowrap"
                     >
                         <Download size={20} />
-                        Download Resume
+                        Tech Resume
+                    </a>
+
+                    <a
+                        href={pmResume}
+                        download="Ishaan_Verma_Product_Management_Resume.pdf"
+                        target="_blank"
+                        className="px-6 py-4 rounded-full border border-white/20 text-white font-medium hover:bg-white/5 hover:border-white/40 transition-all flex items-center gap-2 backdrop-blur-sm whitespace-nowrap"
+                    >
+                        <Download size={20} />
+                        PM Resume
                     </a>
                 </motion.div>
             </div>

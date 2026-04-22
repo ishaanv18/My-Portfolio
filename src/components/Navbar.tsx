@@ -4,6 +4,7 @@ import { Menu, X, User, Briefcase, Code, Mail, GraduationCap, Cpu } from 'lucide
 import { cn } from '../lib/utils';
 import logo from '../assets/logo.png';
 import resume from '../assets/Ishaan_Verma_Resume.pdf';
+import pmResume from '../assets/Ishaan_Verma_Product_Management_Resume.pdf';
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +66,14 @@ export const Navbar = () => {
                             target="_blank"
                             className="px-6 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-medium hover:bg-neon-cyan/20 hover:border-neon-cyan/50 hover:text-neon-cyan transition-all duration-300"
                         >
-                            Resume
+                            Tech Resume
+                        </a>
+                        <a
+                            href={pmResume}
+                            target="_blank"
+                            className="px-6 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-medium hover:bg-neon-cyan/20 hover:border-neon-cyan/50 hover:text-neon-cyan transition-all duration-300"
+                        >
+                            PM Resume
                         </a>
                     </div>
 
@@ -104,7 +112,14 @@ export const Navbar = () => {
                                     target="_blank"
                                     className="mt-4 px-6 py-3 bg-neon-cyan/10 border border-neon-cyan/30 rounded-xl text-center text-neon-cyan font-medium hover:bg-neon-cyan/20 transition-all"
                                 >
-                                    Resume
+                                    Tech Resume
+                                </a>
+                                <a
+                                    href={pmResume}
+                                    target="_blank"
+                                    className="px-6 py-3 bg-neon-cyan/10 border border-neon-cyan/30 rounded-xl text-center text-neon-cyan font-medium hover:bg-neon-cyan/20 transition-all"
+                                >
+                                    PM Resume
                                 </a>
                             </div>
                         </motion.div>

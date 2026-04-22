@@ -1,41 +1,55 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Code2, ExternalLink } from 'lucide-react';
+import { Github, Code2, ExternalLink, ArrowRight } from 'lucide-react';
 import empowerlyLogo from '../assets/empowerly_logo.webp';
 import arribotLogo from '../assets/arribot_logo.webp';
 import aiDungeonLogo from '../assets/ai_dungeon_logo.webp';
+import astramindLogo from '../assets/astramind_logo.png';
+import astramindDetails from '../content/astramind.md?raw';
+import empowerlyDetails from '../content/empowerly.md?raw';
+import arribotDetails from '../content/arribot.md?raw';
+import aiDungeonDetails from '../content/aidungeon.md?raw';
+import { ProjectModal, type ProjectData } from './ProjectModal';
 
 export const Projects = () => {
-    const projects = [
+    const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
+
+    const projects: ProjectData[] = [
         {
             title: "Empowerly",
             category: "Employee-HR Management System",
             description: "A unified, AI-driven HR platform designed to automate workforce operations, improve employee engagement, and deliver real-time business insights. Empowerly integrates attendance, leave, payroll, performance reviews, real-time chat, and video meetings into a single secure system.",
-            tech: ["Java", "Spring Boot", "React", "WebRTC", "MongoDB"],
+            tech: ["Java Spring Boot", "React", "MongoDB", "Google Gemini", "WebRTC", "JWT", "Framer Motion"],
             github: "https://github.com/ishaanv18/Empowerly",
             live: "https://empowerly.vercel.app/",
-            gradient: "from-pink-500 to-rose-500",
+            gradient: "from-blue-500 to-cyan-500",
             logo: empowerlyLogo,
-            logoBg: "bg-white"
+            logoBg: "bg-white",
+            detailsMd: empowerlyDetails
         },
         {
             title: "ArriBot",
             category: "AI Learning Platform",
             description: "A modern, full-stack AI-powered learning platform designed to enhance self-study through intelligent automation. ArriBot enables users to interact with an AI chatbot, generate flashcards, create quizzes, and summarize long texts for faster learning.",
-            tech: ["Spring Boot", "React", "Gemini AI", "MongoDB"],
+            tech: ["React", "Java", "Spring Boot", "Gemini AI", "WebRTC"],
             github: "https://github.com/ishaanv18/ArriBot",
             live: "https://arri-bot.vercel.app/",
-            gradient: "from-blue-500 to-cyan-500",
+            gradient: "from-emerald-500 to-teal-500",
             logo: arribotLogo,
-            logoBg: "bg-white"
+            logoBg: "bg-white",
+            detailsMd: arribotDetails
         },
         {
             title: "ASTraMind",
             category: "AI Code Intelligence",
             description: "An advanced AI-driven platform that transforms large codebases into intelligent, searchable knowledge systems. ASTraMind enables developers to query their code using natural language, understand architecture, analyze dependencies, and gain AI-powered insights.",
-            tech: ["Spring Boot", "PostgreSQL", "React", "LLM", "RAG"],
+            tech: ["FastAPI", "ChromaDB", "React", "LLM", "RAG"],
             github: "https://github.com/ishaanv18/ASTraMind",
             live: "https://astramind.vercel.app/",
-            gradient: "from-purple-500 to-indigo-500"
+            gradient: "from-purple-500 to-indigo-500",
+            logo: astramindLogo,
+            logoBg: "bg-black",
+            detailsMd: astramindDetails
         },
         {
             title: "AI-Dungeon-Master",
@@ -46,7 +60,8 @@ export const Projects = () => {
             live: "https://ai-dungeon-master-eta.vercel.app/",
             gradient: "from-amber-500 to-orange-500",
             logo: aiDungeonLogo,
-            logoBg: "bg-black"
+            logoBg: "bg-black",
+            detailsMd: aiDungeonDetails
         }
     ];
 
@@ -78,7 +93,8 @@ export const Projects = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.2, duration: 0.6 }}
-                            className="group relative rounded-3xl bg-obsidian border border-white/10 overflow-hidden hover:border-white/20 transition-colors h-full flex flex-col"
+                            className="group relative rounded-3xl bg-obsidian border border-white/10 overflow-hidden hover:border-white/20 transition-colors h-full flex flex-col cursor-pointer"
+                            onClick={() => setSelectedProject(project)}
                         >
                             <div className={`absolute inset-0 bg-gradient-to-b ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
                             <div className="absolute inset-[1px] bg-obsidian rounded-[23px] z-0" />
@@ -96,12 +112,12 @@ export const Projects = () => {
                                     )}
                                     <div className="flex gap-4">
                                         {project.github && (
-                                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                                            <a href={project.github} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="p-2 bg-obsidian border border-white/10 rounded-full text-gray-400 hover:text-white transition-colors relative z-20">
                                                 <Github size={20} />
                                             </a>
                                         )}
                                         {project.live && (
-                                            <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                                            <a href={project.live} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="p-2 bg-obsidian border border-white/10 rounded-full text-gray-400 hover:text-white transition-colors relative z-20">
                                                 <ExternalLink size={20} />
                                             </a>
                                         )}
@@ -115,18 +131,28 @@ export const Projects = () => {
                                     {project.description}
                                 </p>
 
-                                <div className="flex flex-wrap gap-2 mt-auto">
+                                <div className="flex flex-wrap gap-2 mt-auto mb-6">
                                     {project.tech.map((t) => (
                                         <span key={t} className="px-3 py-1 text-xs font-medium text-gray-300 bg-white/5 rounded-full border border-white/10">
                                             {t}
                                         </span>
                                     ))}
                                 </div>
+                                <div className="flex items-center text-sm font-medium text-neon-cyan group-hover:text-white transition-colors gap-2">
+                                    View Project Details
+                                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                                </div>
                             </div>
                         </motion.div>
                     ))}
                 </div>
             </div>
+            
+            <ProjectModal 
+                isOpen={!!selectedProject} 
+                onClose={() => setSelectedProject(null)} 
+                project={selectedProject} 
+            />
         </section>
     );
 };
