@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 # Directory containing images
-public_dir = r"c:\Users\ishaa\Downloads\AntiGravity\My PortFolio\public"
+public_dir = "public"
 
 # Images to compress
 images_to_compress = [
