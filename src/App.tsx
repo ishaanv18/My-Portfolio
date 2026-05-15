@@ -8,6 +8,7 @@ import { Experience } from './components/Experience';
 import { TechStack } from './components/TechStack';
 import { Certifications } from './components/Certifications';
 import { Projects } from './components/Projects';
+import { ProductManagement } from './components/ProductManagement';
 import { Contributions } from './components/Contributions';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -39,6 +40,7 @@ function App() {
               <Certifications />
             </div>
             <Projects />
+            <ProductManagement />
             <Contributions />
             <Contact />
             <Footer />

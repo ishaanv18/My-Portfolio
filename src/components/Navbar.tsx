@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, User, Briefcase, Code, Mail, GraduationCap, Cpu } from 'lucide-react';
+import { Menu, X, User, Briefcase, Code, Mail, GraduationCap, Cpu, FileText } from 'lucide-react';
 import { cn } from '../lib/utils';
 import logo from '../assets/logo.png';
 import resume from '../assets/Ishaan_Verma_Resume.pdf';
@@ -24,6 +24,7 @@ export const Navbar = () => {
         { name: 'Experience', icon: <Briefcase size={18} />, href: '#experience' },
         { name: 'Arsenal', icon: <Cpu size={18} />, href: '#tech' },
         { name: 'Projects', icon: <Code size={18} />, href: '#projects' },
+        { name: 'PM Work', icon: <FileText size={18} />, href: '#product-management' },
         { name: 'Contact', icon: <Mail size={18} />, href: '#contact' },
     ];
 
